@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZNT Esports Creator Program - Policy & Guidelines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #0a4d3c 50%, #00ff88 100%);
+            background-attachment: fixed;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Banner Section */
+        .banner {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(0, 255, 136, 0.3);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .logo-space {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px dashed rgba(0, 255, 136, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        .logo-space img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00ff88, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            color: #00ff88;
+            font-weight: 500;
+        }
+
+        /* Section Styling */
+        .section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #00ff88;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.8s ease-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .section h2 {
+            color: #00ff88;
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section h2::before {
+            content: attr(data-icon);
+            font-size: 1.2em;
+        }
+
+        .section h3 {
+            color: #00ffff;
+            font-size: 1.4em;
+            margin: 25px 0 15px;
+        }
+
+        .section p, .section ul {
+            color: #e0e0e0;
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .section li::before {
+            content: "▸";
+            color: #00ff88;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, rgba(0, 255, 136, 0.2), rgba(0, 255, 255, 0.2));
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            margin-top: 40px;
+            border: 2px solid rgba(0, 255, 136, 0.3);
+        }
+
+        .footer p {
+            color: #00ff88;
+            font-size: 1.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(0, 255, 136, 0.6);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2em;
+            }
+            .section {
+                padding: 25px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Banner Section -->
+        <div class="banner">
+            <div class="logo-space">
+                <span style="color: rgba(0, 255, 136, 0.5); font-size: 1.2em;">[ YOUR LOGO HERE ]</span>
+            </div>
+            <h1>ZNT ESPORTS</h1>
+            <h1 style="font-size: 1.8em; margin-top: -10px;">CREATOR PROGRAM</h1>
+            <p>Official Policy & Guidelines</p>
+            <p style="color: #00ffff; font-size: 0.9em; margin-top: 10px;">Last Updated: November 2025</p>
+        </div>
+
+        <!-- Section 1: General Overview -->
+        <div class="section">
+            <h2 data-icon="🧾">1. General Overview</h2>
+            <p>The ZNT Creator Program is an exclusive partnership initiative designed to support, promote, and collaborate with content creators who align with our esports values and community standards.</p>
+            <p>By joining, creators agree to uphold the professionalism, integrity, and reputation of ZNT Esports in all their public activities.</p>
+        </div>
+
+        <!-- Section 2: Eligibility & Conduct -->
+        <div class="section">
+            <h2 data-icon="⚖️">2. Eligibility & Conduct</h2>
+            <h3>✅ Applicants must:</h3>
+            <ul>
+                <li>Be 16 years or older.</li>
+                <li>Have an active content channel with consistent uploads/streams.</li>
+                <li>Maintain positive behavior and public image within the gaming community.</li>
+            </ul>
+            
+            <h3>🚫 Creators must not:</h3>
+            <ul>
+                <li>Engage in toxic, discriminatory, or hateful behavior.</li>
+                <li>Use or promote cheats, hacks, or unfair gameplay advantages.</li>
+                <li>Involve themselves in drama, harassment, or public conflicts representing ZNT.</li>
+            </ul>
+            
+            <div class="highlight">
+                <p><strong>ZNT reserves the right to remove or suspend a creator from the program at any time if they fail to comply with these terms.</strong></p>
+            </div>
+        </div>
+
+        <!-- Section 3: Representation & Branding -->
+        <div class="section">
+            <h2 data-icon="📣">3. Representation & Branding</h2>
+            <ul>
+                <li>Creators may represent themselves as "ZNT Creator" or "Partnered with ZNT Esports."</li>
+                <li>Use of official logos, overlays, or branding assets must follow ZNT's Brand Kit (provided upon acceptance).</li>
+                <li>All ZNT-related content must reflect the team positively and avoid controversies.</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>Any unauthorized use of the ZNT name or assets (merch, logos, sponsors) for profit or misrepresentation is strictly prohibited.</strong></p>
+            </div>
+        </div>
+
+        <!-- Section 4: Monetization & Sponsorships -->
+        <div class="section">
+            <h2 data-icon="💰">4. Monetization & Sponsorships</h2>
+            <ul>
+                <li>Creators are free to have their own sponsors or brand deals, provided they do not conflict with ZNT's existing sponsors or partnerships.</li>
+                <li>All collaboration or sponsorship requests involving ZNT's name or logo must be approved by management in writing.</li>
+                <li>ZNT may offer exclusive sponsorship opportunities or revenue-sharing deals — participation is optional but subject to internal terms.</li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Content & Media Rights -->
+        <div class="section">
+            <h2 data-icon="📸">5. Content & Media Rights</h2>
+            <ul>
+                <li>All content created under ZNT collaborations remains property of the creator, but ZNT retains the right to repost, feature, or showcase it for promotional purposes (with proper credit).</li>
+                <li>ZNT may request certain branding integration (intro/outro, hashtag, watermark) for uniformity.</li>
+                <li>Content that violates copyright laws, community guidelines, or ZNT standards may be requested to be removed or edited.</li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Activity & Participation -->
+        <div class="section">
+            <h2 data-icon="🤝">6. Activity & Participation</h2>
+            <ul>
+                <li>Creators must remain reasonably active on their primary platform.</li>
+                <li>Extended inactivity (30+ days) without notice may result in temporary removal from the program.</li>
+                <li>Participation in team events, tournaments, or campaigns is encouraged but voluntary unless otherwise agreed upon.</li>
+            </ul>
+        </div>
+
+        <!-- Section 7: Confidentiality -->
+        <div class="section">
+            <h2 data-icon="🧠">7. Confidentiality</h2>
+            <p>Any non-public information shared by ZNT (plans, line-ups, internal projects, sponsorship details, etc.) is strictly confidential.</p>
+            <div class="highlight">
+                <p><strong>Sharing internal discussions or leaks without permission will lead to immediate removal from the program.</strong></p>
+            </div>
+        </div>
+
+        <!-- Section 8: Termination & Removal -->
+        <div class="section">
+            <h2 data-icon="🏅">8. Termination & Removal</h2>
+            <h3>ZNT reserves the right to:</h3>
+            <ul>
+                <li>Terminate a creator's partnership at any time, with or without notice, for violations of policy, inactivity, or misconduct.</li>
+                <li>Remove any member using ZNT's name for personal drama, false claims, or unauthorized business.</li>
+                <li>Reconsider partnership after a minimum of 30 days if the creator wishes to re-apply.</li>
+            </ul>
+            <p style="margin-top: 20px;">Creators may also leave the program voluntarily at any time by notifying management.</p>
+        </div>
+
+        <!-- Section 9: Communication & Support -->
+        <div class="section">
+            <h2 data-icon="💬">9. Communication & Support</h2>
+            <ul>
+                <li>All official communication must take place through ZNT's Discord server or verified staff contacts.</li>
+                <li>Creators are expected to maintain professional communication with ZNT staff and other creators.</li>
+                <li>Support will be available for branding, collaborations, and guidance through the Creator Support Team.</li>
+            </ul>
+        </div>
+
+        <!-- Section 10: Agreement -->
+        <div class="section">
+            <h2 data-icon="🧩">10. Agreement</h2>
+            <div class="highlight">
+                <p><strong>By joining the ZNT Creator Program, you acknowledge that you have read, understood, and agreed to follow all terms listed above.</strong></p>
+                <p style="margin-top: 10px;"><strong>ZNT Esports reserves the right to update or modify these policies at any time to maintain fairness and integrity across the program.</strong></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 ZNT Esports. All Rights Reserved.</p>
+            <p style="color: #00ffff; margin-top: 10px;">Built with passion for the gaming community 🎮</p>
+        </div>
+    </div>
+</body>
+</html>
